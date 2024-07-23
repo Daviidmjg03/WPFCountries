@@ -30,6 +30,8 @@ namespace WPFPaisesProjetoFinal
             dataService = new DataService();
             listBoxCountries.SelectionChanged += listBoxCountries_SelectionChanged;
             // Chama o método assíncrono para carregar países
+            AboutWindow aboutWindow = new AboutWindow();
+            aboutWindow.ShowDialog();
             LoadCountriesAsync();
         }
 
